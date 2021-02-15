@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+header{
+    grid-column: 1/-1;
+    font-size: .45rem;
+    font-family: 'Press Start 2P', cursive; 
+    box-shadow: 2px 3px 10px 4px rgb(134, 134, 22);     
+    background-color: yellow;
+}
+main{
+    grid-column: 1/-1;
+    grid-row: 2;
+    margin: 0 1vh;
+    font-size: 1.25rem;
+}
+footer{
+    padding: 5vh 0 5vh 0;
+    text-align: center;
+    margin-top: 4vh;
+    background-color: #ee1f04ee;  
+    box-shadow: -2px -1px 10px 1px #8b1202;
+    color: white;
+    text-shadow: 2px 2px #1a0303;
+    font-size: 1.5rem;
+}
+h1{
+    padding: 5vh 0;
+    text-align: center;
+}
+h2{
+    margin: 5vh 0;
+    text-align: center;
+}
+p{
+    display: inline;
+    text-align: center;   
+}
+li{
+    list-style-type: none;
+}
+button {
+    margin-top: 2vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.characterDiv{
+    margin-top: 5vh;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.sideDiv{
+    margin: 5vh 0 0 1vh;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.vehicleDiv{
+    margin-top: 3vh;
+}
+.chuckMessage{
+    grid-column: 1/-1;
+    margin: 2vh 0;
+    padding: 2vh 0;
+    box-shadow: 2px 2px 5px 6px grey;
+}
+.chuckUl{
+    line-height: 3rem;
+}
+.pInputQuestion{
+    font-weight: bold;
+    
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+#message li{
+    margin: 1.5vh 2rem;
+}
+#charactertImg{
+    margin-right: 2vh;
+    padding: 1vh;
+    height: 7rem;
+    float: left;
+    border-right: 1px inset gray;
+}
+#resultImg{
+    vertical-align: text-top;    
+}
+#done{  
+    height: auto;
+    width: 6.25rem;
+    font-size: 1.5rem;
+}
+#rpgImage{
+    margin-top: 2vh;
+    height: 35vh;
+}
+@media only screen and (min-width: 301px)and (max-width:500px){
+
+    .characterDiv button{
+        margin: 1vh 1vh;
+    }
+    .sideDiv button{
+        margin: 2vh 1vh;
+    }
+    #done{    
+        margin: .5rem 35% 2rem;
+        height: auto;
+        width: 6.25rem;
+        font-size: 1.5rem;
+    }    
+}
+@media only screen and (min-width: 501px)and (max-width:1021px){
+    #charactertImg{    
+        height: 12rem;
+        
+    }
+    #done{
+        grid-column: 1/-1;    
+        margin: 2rem 42%;
+    }
+    .messageP{
+        font-weight: bold;
+    } 
+}
+@media only screen and (min-width: 1021px) {
+    main{
+        margin: 0 10vh;
+    }
+    footer{
+        grid-column: 1/-1;
+        grid-row: 3; 
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);    
+        min-height: 100%;        
+    }
+    h1{
+        font-size: 2.5rem;
+        padding: 5vh 0;
+    }
+    .messageP{
+        grid-column: 1/-1;
+        grid-row: 1;
+        text-align: center;
+        font-weight: bold;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .welcomeDiv{
+        margin: 0 15%;
+    } 
+    .characterDiv{
+        grid-column: 1/2;
+        grid-row: 1;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sideDiv{
+        grid-column: 2/4;
+        margin: 10vh 0 0 5vh;        
+    }  
+    .chuckMessage{
+        grid-column: 2/4;
+        grid-row: 2;   
+    }
+    #done{
+        grid-column: 1/-1;    
+        margin: 2rem auto;
+    }
+    #charactertImg{    
+        height: 12rem;
+        
+    }
+    #message{
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f2dfc9d339.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ultimate RPG Character</title>
+</head>
+<body>
+    <div class="container">
+        <header>  
+            <h1>Ultimate RPG Character</h1>
+        </header>
+        <main>
+            <h2>Welcome to the Ultimate RPG Character creator</h2> 
+            <div class="welcomeDiv">
+                <p class="intro">We are dedicated to ensuring that you find your perfect RPG character for your application. Please feel free to browse the items below to find your perfect character!</p>
+            </div>             
+            <div class="content">                 
+                <div class="characterDiv">
+                    <p class="pInputQuestion">Select your character</p>
+                    <br>
+                    <img id="rpgImage">
+                    <br>
+                    <button id="img1Minus"><i class="fas fa-chevron-left fa-2x"></i></button>
+                    <button id="img1Plus"><i class="fas fa-chevron-right fa-2x"></i></button>
+                </div>
+                <div class="sideDiv">
+                    <div class="playerNDiv">
+                        <p class="pInputQuestion">Select Player's Name</p>
+                        <br>
+                        <p id="playerChoiceText"></p>
+                        <br>
+                        <button id="playerChoiceMinus"><i class="fas fa-chevron-left fa-2x"></i></button><button id="playerChoicePlus"><i class="fas fa-chevron-right fa-2x"></i></button>
+                    </div>  
+                    <div class="vehicleDiv">
+                        <p class="pInputQuestion">Select Players vechicle</p>
+                        <br>
+                    <p id="shipsText"></p>
+                    <br>
+                    <button id="shipsMinus"><i class="fas fa-chevron-left fa-2x"></i></button><button id="shipsPlus"><i class="fas fa-chevron-right fa-2x"></i></button>    
+                    </div> 
+                </div> 
+                <br>
+                <button id="done">Select</button>
+            </div>
+            <div id="message">    
+                <p class="messageP">Here is the character you selected!</p>
+                <div class="chuckMessage">
+                    <img id="charactertImg" class="clearfix">
+                    <ul >
+                        <li id="playerName"><b>Name: </b></li>
+                        <li id="shipType"><b>Vhicle: </b></li>
+                    </ul>  
+                    <p id="chuckMessageLabel"><b>Favorite joke: </b> </p>                     
+                </div>                
+            </div>
+        </main>
+        <footer>  
+            <span class="span">&copy;2020 Web Dev Student- William M.</span> 
+        </footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="singlePage.js"></script>  
+</body>
+</html>
+
